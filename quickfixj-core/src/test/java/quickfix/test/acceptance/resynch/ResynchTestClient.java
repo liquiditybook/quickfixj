@@ -151,6 +151,12 @@ public class ResynchTestClient extends MessageCracker implements Application {
         }
     }
 
+    public void toAdmin(Message message, SessionID sessionId, String inboundMsg) {
+        if (message instanceof Logon) {
+            System.out.println("Sending logon message: " + message);
+        }
+    }
+
     public void toApp(Message message, SessionID sessionId) throws DoNotSend {
     }
 

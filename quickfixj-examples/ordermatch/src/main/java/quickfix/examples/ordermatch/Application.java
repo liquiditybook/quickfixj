@@ -264,6 +264,9 @@ public class Application extends MessageCracker implements quickfix.Application 
         // empty
     }
 
+    public void toAdmin(Message message, SessionID sessionId, String inboundMsg) {
+    }
+
     public void toApp(Message message, SessionID sessionId) throws DoNotSend {
         // empty
     }

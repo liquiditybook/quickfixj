@@ -139,6 +139,12 @@ public class TimerTestClient extends MessageCracker implements Application {
         }
     }
 
+    public void toAdmin(Message message, SessionID sessionId, String inboundMsg) {
+        if (message instanceof TestRequest) {
+            stop(true);
+        }
+    }
+
     public void toApp(Message message, SessionID sessionId) throws DoNotSend {
     }
 

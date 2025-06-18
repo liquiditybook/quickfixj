@@ -105,6 +105,9 @@ public class BanzaiApplication implements Application {
     public void toAdmin(quickfix.Message message, SessionID sessionID) {
     }
 
+    public void toAdmin(Message message, SessionID sessionId, String inboundMsg) {
+    }
+
     public void toApp(quickfix.Message message, SessionID sessionID) throws DoNotSend {
     }
 

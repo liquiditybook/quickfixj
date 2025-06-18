@@ -67,6 +67,8 @@ public class ATApplication implements Application {
         assertNoSessionLock(sessionID);
     }
 
+    public void toAdmin(Message message, SessionID sessionID, String inboundMsg) { assertNoSessionLock(sessionID);}
+
     public void toApp(Message message, SessionID sessionID) throws DoNotSend {
         assertNoSessionLock(sessionID);
         try {

@@ -63,6 +63,11 @@ public class UnitTestApplication implements ApplicationExtended, SessionStateLis
         toAdminMessages.add(message);
     }
 
+    public void toAdmin(Message message, SessionID sessionId, String inboundMsg) {
+        log.info("to admin [{}] {}", sessionId, message);
+        toAdminMessages.add(message);
+    }
+
     public void onBeforeSessionReset(SessionID sessionId) {
         log.info("onBeforeSessionReset [{}]", sessionId);
     }

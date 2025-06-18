@@ -155,6 +155,9 @@ public class TimerTestServer extends MessageCracker implements Application, Runn
     public void toAdmin(Message message, SessionID sessionId) {
     }
 
+    public void toAdmin(Message message, SessionID sessionId, String inboundMsg) {
+    }
+
     public void toApp(Message message, SessionID sessionId) throws DoNotSend {
     }
 

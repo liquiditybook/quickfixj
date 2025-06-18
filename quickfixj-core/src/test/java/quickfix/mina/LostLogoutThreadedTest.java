@@ -119,6 +119,9 @@ public class LostLogoutThreadedTest {
         public void toAdmin(Message message, SessionID sessionId) {
         }
 
+        public void toAdmin(Message message, SessionID sessionId, String inboundMsg) {
+        }
+
         /*
          * Save the logout message received from client.
          */
@@ -194,6 +197,9 @@ public class LostLogoutThreadedTest {
         }
 
         public void toAdmin(Message message, SessionID sessionId) {
+        }
+
+        public void toAdmin(Message message, SessionID sessionId, String inboundMsg) {
         }
 
         public void fromAdmin(Message message, SessionID sessionId) throws FieldNotFound,
