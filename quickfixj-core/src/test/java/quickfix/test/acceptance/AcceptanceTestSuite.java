@@ -246,6 +246,8 @@ public class AcceptanceTestSuite extends TestSuite {
     }
 
     public static Test suite() {
+        System.setProperty("LQBKCustom", "false");
+        System.setProperty("LQBKSkiptime", "true");
         transportType = ProtocolFactory.getTransportType(System.getProperty(ATEST_TRANSPORT_KEY, ProtocolFactory.getTypeString(ProtocolFactory.SOCKET)));
         port = AvailablePortFinder.getNextAvailable(port);
         TestSuite acceptanceTests = new TestSuite(AcceptanceTestSuite.class.getSimpleName());

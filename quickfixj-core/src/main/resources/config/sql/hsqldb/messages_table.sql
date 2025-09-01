@@ -15,3 +15,4 @@ CREATE TABLE messages (
                targetcompid, targetsubid, targetlocid, session_qualifier,
                msgseqnum)
 );
+
